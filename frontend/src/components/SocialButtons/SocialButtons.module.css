@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+
+/* Ustawiamy zmienną --size globalnie */
+:root {
+  --size: 40px;
+}
+
+.icon{
+  border-radius: 50%;
+  width: var(--size);
+  height: var(--size);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper{
+  display:flex;
+  gap: 10px;
+}
+
+.icon i{
+  font-size: calc(var(--size)/2);
+}
+
+.icon {
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.icon:hover {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}

@@ -1,0 +1,15 @@
+.blinking_cursor {
+  display: inline-block;
+  width: 2px;
+  height: 1em;
+  background-color: #fff;    
+  margin-left: 3px;         
+  vertical-align: middle;   
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

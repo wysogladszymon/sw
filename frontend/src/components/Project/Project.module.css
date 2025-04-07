@@ -1,0 +1,41 @@
+.btn{
+  width: 100px;
+  transform: translateY(50px);
+  opacity: 0;
+  transition: transform 300ms ease-in-out, opacity 300ms ease-in-out;
+}
+
+.btncontainer {
+  position: absolute;
+  inset: 0; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+}
+
+.btncontainer:hover .btn{
+  transform: translateY(0px);
+  opacity:1;
+}
+
+.card_container{
+  width: 100%;
+  max-width: 800px;
+  position: relative;
+  overflow: hidden;
+  animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%;
+}
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-100px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

@@ -1,0 +1,11 @@
+.book_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 200px);
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+  min-width: 60vw;
+  width:100%;
+  justify-content: center;
+  align-items: center;
+}

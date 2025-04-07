@@ -1,0 +1,63 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  /* background-color: red; */
+}
+
+h1 {
+  font-size: min(calc(2.5vw + 1.5rem), 3rem);
+  font-weight: 600;
+  color: hsl(var(--foreground));
+  letter-spacing: -0.025em;
+  margin-bottom: 1rem;
+}
+
+h2 {
+  font-size: min(calc(2.5vw + 1.25rem), 2.75rem);
+  font-weight: 500;
+  color: hsl(var(--foreground));
+  letter-spacing: -0.015em;
+  margin-bottom: 0.75rem;
+}
+
+h3 {
+  font-size: min(calc(2.5vw + 1rem), 2.5rem);
+  font-weight: 400;
+  color: hsl(var(--foreground));
+  letter-spacing: -0.01em;
+  margin-bottom: 0.5rem;
+}
+
+h4, h5, h6 {
+  color: hsl(var(--muted-foreground));
+}
+
+section {
+  padding: 4rem min(5%, 2rem);    
+  margin: 0 auto;
+  max-width: 1280px;       
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;             
+  box-sizing: border-box; 
+  /* animation: appear linear;
+  animation-timeline: view();
+  animation-range: entry 0% cover 30%; */
+}
+
+
+@keyframes appear {
+  from {
+    opacity: 0;
+    transform: translateX(-100px); 
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0px);
+  }
+}

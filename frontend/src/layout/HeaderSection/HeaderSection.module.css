@@ -1,0 +1,62 @@
+.img_class{
+  border-radius: 1rem;
+  opacity: 1;
+  width: 275px;
+  height: 275px;
+  object-fit: cover;
+  transform: scale(0.90);
+}
+
+.container{
+  width:100%;
+  position:sticky;
+  top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  gap: 1.5rem;
+  opacity: 1;
+}
+
+.leftcard{
+  max-width:700px;
+  overflow:hidden;
+  max-height: 276px;
+  font-size: min(calc(2vw + 1px), 16px);
+}
+
+.terminal{
+  top: 10rem;
+  margin-bottom: 20px;
+}
+
+.section_class{
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  min-height: 300vh;
+}
+
+@keyframes img_appear{
+  from{
+    height: 0px;
+    width: 0px;
+  }
+  to{
+    height: 275px;
+    width: 275px;
+  }
+}

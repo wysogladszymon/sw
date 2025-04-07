@@ -4,7 +4,8 @@
   gap: 1rem;
   width: 100%;
   padding: 1rem;
-  min-width: 60vw;
+  min-width: 50vw;
+  max-width: 90vw;
   width:100%;
   justify-content: center;
   align-items: center;

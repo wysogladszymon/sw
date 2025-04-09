@@ -6,7 +6,7 @@ import {
   oneLight as baseOneLight,
 } from "react-syntax-highlighter/dist/cjs/styles/prism";
 import { useScroll, useMotionValueEvent } from "framer-motion";
-import { Phone, Mail } from "lucide-react";
+import { Phone, Mail, InfoIcon } from "lucide-react";
 import styles from "./HeaderSection.module.css";
 import {
   Card,
@@ -78,6 +78,11 @@ export const HeaderSection = () => {
   return (
     <>
       <section ref={sectionRef} className={styles.section_class}>
+    <div className='flex gap-3'>
+      <InfoIcon/>
+      <i> You need to scroll down </i>
+      <InfoIcon/>
+    </div>
         <div className={styles.container}>
           <CodeWindow
             className={styles.terminal}

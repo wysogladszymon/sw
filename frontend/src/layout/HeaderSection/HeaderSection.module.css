@@ -60,3 +60,9 @@
     width: 275px;
   }
 }
+
+@media (max-width: 1120px) {
+  .card {
+    flex-direction: column;
+  }
+}
